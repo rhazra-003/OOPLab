@@ -1,0 +1,50 @@
+// 1a) Dealing with Large Numbers even beyond the range of long long int
+Objective:  Learn to deal with char strings
+Problem Statement
+Adding two numbers is trivial. In C/C++, the simple mathematical expression such as sum = a + b will add variable 'a' and 'b' and put the result in the variable 'sum'. Your task is to add two very large numbers which are beyond the capacity to be stored in any existing integer data types in C/C++ like long int, etc . Write a function largeAdd(ni,n2) to achieve such very large digit additions. You should save your output (sum) in a text file “sum.txt”.
+
+[Idea is to treat such a large number as a string of characters each consisting of digits in the range 0-9. Hence you should take two input numbers (strings) say, “2345” & “9876” and .perform digitwise addition (perform char to int conversion, add and then store the result back as char) as we do addition manually, finally display the sum “12221”as a string.]
+
+
+// 1b) Indentation of an unindented code
+Objective:  Learn to deal with text files and char strings
+Problem Statement
+Read as input an unindented C/C++ program from a C/C++ file, them write a function indent() to convert the input code into an indented code. The intended code should be saved in another file “indent.c” and display. 
+
+[Read the input unindented code as an array of strings; treat each line (null terminated) of code as a string; maintain a int variable say (tab). During processing parse each string(line) and increment tab when ‘{‘ is encountered and decrement tab when ‘}’ is encountered. To obtain desired indentation append specific number of blank spaces corresponding to the tab to each string(line) (you may use strcat() function to achieve this).]
+
+
+// 1c) Generating random numbers
+Objective:  Learn how generate pseudo-random numbers are generated using linear congruential generator https://en.wikipedia.org/wiki/Linear_congruential_generator
+Problem Statement
+Write a code to generate that will implement your random number generator function myrand() using the multiplicative congruential generator formula:
+Xi+1=(Xi * a) % m;
+Set X0 the initial value of the series to be the system time using time() function.
+Now generate 10000 random numbers in the range [1,50] using myrand() and also using library function rand(). Display the Chi-square test value of both the random series and comment if they are acceptable. You may set the suitable values for a, c & m (refer wiki page).
+
+
+// 1d) A trigonometric function plotter 
+Objective:  Learn to use manipulators
+Problem Statement
+Write a C++ code to display the plot of 
+-	cosine function and 
+Your program should take as input the initial and final value of theta (in degrees), step count and also the char to be used to fill up the pattern.
+
+Write a C++ code to do the same as above for exponential function.
+
+
+// 1e) Displaying number patterns
+Objective:  Learn to use manipulators
+Problem Statement
+Write a C++ code to accept a value of ‘n’ and display a number pattern as following:
+Example for input n=5:
+
+123454321
+ 2345432
+  34543   
+   454
+    5
+   454
+  34543
+ 2345432
+123454321
