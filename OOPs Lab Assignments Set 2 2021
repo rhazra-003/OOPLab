@@ -1,0 +1,45 @@
+// 2a. Dealing with dynamic allocation of 1D arrays
+
+Objective:  Learn to use new and delete operator
+
+Problem Statement
+
+Write a program to dynamically allocate a 1-D array of size n to store a heap data structure.
+
+    - write functions to perform insertion, deletion operation and display on heap
+
+Write functions alloc1DArray, display1DArray, insHeap, delHeap, heapify, etc. to solve it
+
+ 
+// 2b. Dealing with dynamic allocation of 2D arrays
+
+Objective:  Learn to use new and delete operator
+
+Problem Statement
+
+Write a program to dynamically allocate a 2-D array of size m x n and perform.
+
+    - Matrix multiplication
+
+    - Determinant of the matrix (when m = = n)
+
+Write functions alloc2DArray, dealloc2DArray, read2DArray, display2DArray, multMartix, detMatrix, etc and include them in a header file “myMatrix.h”. You must properly call deallocation function to remove garbage.
+
+ 
+// 2c. Dealing with dynamic allocation of 2D arrays
+
+Objective:  An application of Determinant of martix
+
+Problem Statement
+
+Write a program that accept a set ‘n’ of linear equations A.X=C. Use Cramer’s rule to solve the equations. Input the matrix A (set of coefficients) and vector C. (Use the determinant function you developed in Assignment 2b). Show the output test case (i) with 3 variables and case (ii) another where it solves a set of 20 equations involving 20 variables x_i (i=1 to 20); generate the coefficients using random numbers.
+
+ 
+
+// 2d. Dealing with dynamic allocation of 2D arrays; rows having variable number of cols
+
+Objective:  Learn to use new and delete operator
+
+Problem Statement
+
+Write a program to store the marks (CGPA) obtained by the students from ‘n=6’ departments; the number of students in each department may differ. You may use an array (size equals to the number of departments) of pointers where each of its element points to an array (size equals to the number of students in that dept.) of integers. Process the marks list and display the topper in each Dept and the Batch topper. Input marks using random number generator function that you implemented. (Use 2D array header file to perform allocation display etc.
