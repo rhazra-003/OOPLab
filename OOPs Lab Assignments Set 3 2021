@@ -1,0 +1,49 @@
+Assignment 3: C++ Struct/Class
+
+Objectives:
+
+ 
+
+● Writing basic class definition and creation of objects, passing objects, dynamic allocation of objects
+
+·         Use of constructors, destructor
+
+ Use suitable overloaded constructors in each class definitions; show in main the creation of single object static and dynamic allocation and also an array of objects both static and dynamic (as shown in the class Lecture) 
+
+ 
+
+// 1. Implement a stack class. You should have atleast these member functions:  initialize (construct),
+
+deconstruct, push, pop, display, isempty, isfull, etc. Show the use of the class by creating objects and calling the member functions.
+
+ 
+
+// 2. Implement a queue class. You should have atleast these member functions:  initialize (construct),
+
+deconstruct, push, pop, display, isempty, isfull, etc. Show the use of the class by creating objects and calling the member functions.
+
+ 
+
+// 3 Implement a matrix class. You should have atleast these member functions:  allocatespace, readmatrix, displayMatrix, addMartix, multMatrix, detMatrix. Write another function CramerRule which accept matrices A and C and outputs the solution of a set of linear equations (AX=C).
+
+ 
+
+// 4. Implement a linear linked list class which performs insertion (at begining) and deletion as given
+
+the key. You should have atleast these member functions: 
+
+initialize (construct),
+
+deconstruct,
+
+display,
+
+insetBeg,
+
+delete,
+
+concatenate,
+
+search.
+
+Show the use of the class by creating objects and calling the member functions. Use your own random number to generate values to insert and delete.
