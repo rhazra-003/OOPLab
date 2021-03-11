@@ -1,0 +1,45 @@
+//Assignment 4: Implementing Useful Data Structures Classes in C+
+
+Objectives:
+
+ 
+
+● Learn to implement composition
+
+ 
+
+·         Learn to define and use your own header file
+
+ 
+
+·         Use the concepts copy constructor, define constructors using default arguments, etc.
+
+ 
+
+ 
+
+// A1.  Write a hashing class which uses the linked list class header file to implement open hashing using Channing. Use modular hash function (x%10).  Generate 100 random int key values and insert each of them and perform searching. Report the % of load in each of 10 buckets. Try any other different hash function and report which one is better. Implement the following methods
+
+-          Search
+
+-          Insert
+
+-          Delete
+
+-          Display
+
+-          TableLoadDistr
+
+ 
+
+// A2. Write a polynomial class to store and evaluate display and add polynomials. Make use of the node class to implement a polynomial as a chain of linked nodes. Maintain the nodes in increasing order of exponents. Consider both exponent & coefficients to be interger. Include suitable methods like:
+
+-          InsertTerm
+
+-          DeleteTerm
+
+-          DisplayPoly
+
+-          EvalPoly
+
+-          AddPoly
