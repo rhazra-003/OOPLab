@@ -1,0 +1,31 @@
+// A1. Write a Graph data structure (as adjacency list) class which uses linked list class header file. Use the sll class header file and stack (for dfs) class header file for implementation. Provide suitable interface to find
+
+-          the shortest path among a pair of vertices using dijkstra’s algorithm
+
+-          dfs traversal
+
+-          find number of connected components and their sizes
+
+ 
+
+Use the provided files as adjacency information
+
+ 
+
+ 
+
+// A2.  Write a Binary search tree (BST) Class. Define suitable doubly linked node structure for this which will be used by the BST class. Implement the methods
+
+-          insert
+
+-          delete
+
+-          search
+
+-          display
+
+-          findheight
+
+-          dfs
+
+-          bfs
