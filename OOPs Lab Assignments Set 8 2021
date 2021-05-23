@@ -1,0 +1,39 @@
+// 1(a) Implement a Salary class with components like basic, Da, bonus, from which you calculate the gross salary (private member) of an employee using the formula explained in the class lecture. Declare suitable members and objects to implement the static/constant/reference members as discussed.
+
+// 1(b) Write a friend function to show how the average gross salary of two salary objects can be calculated using friend function.
+
+ 
+
+// 2. Convert the stack class you implemented in previous assignments to a suitable template stack class, consider passing both symbol as well as non-symbol type parameters (as required). Assign default arguments to template parameters.
+
+Add suitable exception handling codes to the class template. Illustrate the output by raising exception cases.
+
+ 
+
+ 
+
+// 3. Convert the node (single_link) class you implemented in previous assignments to a suitable template node class (single_link), you may consider passing both symbol as well as non-symbol type parameters (as required).
+
+Assign default arguments to template parameters.
+
+ 
+
+ 
+
+// 4. Convert the linked_list class you implemented in previous assignments to a suitable template linked_list class using the template node (single_link) class in Assignment 2.
+
+ 
+
+ 
+
+// 5. Convert the hash class to a template hash class which uses the template linked_list class in Assignment 3. Add suitable exception handling code to the class template.
+
+ 
+
+ 
+
+Use the template hash class in Assignment 8 to hash the roll sheet file (.csv) as provided. Here hash using the names. Try using Universal Hash Function (refer wiki for details). One example of which : if we are hashing strings of length k, then xi could be the ith character (assuming our table size is at least 256) or the ith pair of characters (assuming our table size is at least 65536). Furthermore, we will require our table size M to be a prime number. To select a hash function h we choose k random numbers r1,r2,... ,rk from {0, 1,... ,M − 1} and define: h(x) = r1x1 + r2x2 + ... + rkxk mod M. Report the evenness of the load across the buckets by measuring the Mean & STD of the load.
+
+ 
+
+Illustrate that if a name is given the roll number and other details is retrieved from the Hash Table.
