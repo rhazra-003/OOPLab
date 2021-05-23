@@ -1,0 +1,101 @@
+#include <iostream>
+
+using namespace std;
+
+class Salary;
+class Faculty;
+class Dean;
+
+
+class Salary {
+public:
+    double basicSalary;
+    int expOfFaculty;
+    int expOfDean;
+    double inc;
+    double grossInc;
+    double bonusOfFaculty;
+    double bonusOfDean;
+};
+
+
+class Faculty : public Salary {
+    double grossSalary;
+
+public:
+    Faculty();
+
+    void calculateSalaryFaculty();
+
+    friend double calAverage(Faculty faculty, Dean dean);
+};
+
+Faculty::Faculty() : Salary(), grossSalary{0} {}
+
+void Faculty::calculateSalaryFaculty() {
+
+    cout << "--------------------- FACULTY ---------------------" << endl << endl;
+    cout << "Enter basic salary of faculty :";
+    cin >> basicSalary;
+
+    cout << "Enter experience of faculty :";
+    cin >> expOfFaculty;
+    cout << "Enter bonus of faculty :";
+    cin >> bonusOfFaculty;
+
+    inc = 0.005 * basicSalary;
+    grossInc = inc * (expOfFaculty / 4.00);
+    grossSalary = grossInc + basicSalary + bonusOfFaculty;
+
+    cout << "Gross salary of faculty is :" << grossSalary << endl;
+}
+
+
+class Dean : public Salary {
+    double grossSalary;
+
+public:
+    Dean();
+
+    void calculateSalaryDean();
+
+    friend double calAverage(Faculty faculty, Dean dean);
+};
+
+Dean::Dean() : Salary(), grossSalary{0} {}
+
+void Dean::calculateSalaryDean() {
+    cout << endl << "--------------------- DEAN ---------------------" << endl << endl;
+    cout << "Enter basic salary of dean :";
+    cin >> basicSalary;
+
+    cout << "Enter experience of dean :";
+    cin >> expOfDean;
+    cout << "Enter bonus of dean :";
+    cin >> bonusOfDean;
+
+    inc = 0.02 * basicSalary;
+    grossInc = inc * (expOfDean / 2.00);
+    grossSalary = grossInc + basicSalary + bonusOfDean;
+
+    cout << "Gross salary of dean is :" << grossSalary << endl;
+}
+
+
+double calAverage(Faculty faculty, Dean dean) {
+    return (dean.grossSalary + faculty.grossSalary) / 2;
+}
+
+
+int main() {
+    Faculty faculty;
+    Dean dean;
+
+    faculty.calculateSalaryFaculty();
+    dean.calculateSalaryDean();
+
+    cout << endl << "--------------------- AVERAGE SALARY ---------------------" << endl;
+    cout << "Average gross salary of faculty and dean is :" << calAverage(faculty, dean) << endl;
+
+    return 0;
+}
