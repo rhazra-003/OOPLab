@@ -1,0 +1,24 @@
+#include <iostream>
+#include "Node.h"
+#include "Node.cpp"
+
+using namespace std;
+
+
+int main() {
+
+    int integer{};
+    cout << "Enter any integer:";
+    cin >> integer;
+    Node N1(integer);
+    cout << "Value of Node is:" << N1.data << endl << endl;
+
+    char character{};
+    cout << "Enter any character:";
+    cin >> character;
+    Node<char> N2(character);
+    cout << "Value of Node is:" << N2.data << endl;
+
+
+    return 0;
+}
